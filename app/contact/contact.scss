@@ -1,0 +1,114 @@
+/* ====================================================================== */
+/* =========================== Contact Section ========================== */
+/* ====================================================================== */
+
+.contact {
+  margin-bottom: var(--margin-sections);
+
+  .section-heading h2 {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-title-sections);
+    color: var(--color-dark);
+    margin: var(--margin-sections-title);
+  }
+
+  .contact-form {
+
+    .subject,
+    .telephone {
+      width: 100%;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    select,
+    textarea {
+      background: none;
+      border: none;
+      border-bottom: solid 2px var(--color-dark);
+      color: var(--color-dark);
+      font-family: var(--font-family-secondary);
+      font-size: var(--font-small);
+      letter-spacing: 1px;
+      margin: 30px 0;
+      padding: 1rem;
+      width: 100%;
+      transition: var(--main-transition);
+    }
+
+    input[type='text']:focus,
+    input[type='email']:focus,
+    textarea:focus {
+      outline: none;
+      padding: 1rem 0 1rem 0;
+    }
+
+    select {
+      border-radius: none;
+      outline: none;
+      appearance: none;
+      color: var(--color-grey);
+      font-family: var(--font-family-secondary);
+
+      option {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+      }
+    }
+
+    textarea {
+      line-height: 150%;
+      height: 150px;
+      resize: none;
+      width: 100%;
+    }
+
+    .checkbox {
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      input {
+        width: 1.5rem;
+        height: 1.5rem;
+        accent-color: var(--color-dark);
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      label {
+        color: var(--color-grey);
+
+        a {
+          color: var(--color-dark);
+        }
+      }
+    }
+
+
+    .submit {
+      .form-button {
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-medium);
+        font-weight: var(--font-weight-bold);
+        background-color: var(--color-light);
+        border: solid 2px var(--color-dark);
+        color: var(--color-dark);
+        cursor: pointer;
+        display: inline-block;
+        padding: 20px 35px;
+        transition: var(--main-transition);
+
+        &:hover {
+          background: var(--color-dark);
+          color: var(--color-light);
+        }
+
+        @media screen and (max-width: 480px) {
+          padding: 15px 25px;
+        }
+      }
+    }
+  }
+}
